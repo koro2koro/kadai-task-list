@@ -1,0 +1,24 @@
+@(taskSeq: Seq[Task])(implicit messagesProvider: MessagesProvider, request: RequestHeader)
+
+@main(Messages("GetTasks")) {
+
+<div class="container">
+  <h1>@Messages("GetTasks")</h1>
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>@Messages("Task")</th>
+    </tr>
+    </thead>
+    <tbody>
+    @for(task <- taskSeq) {
+      <tr>
+        <td><a href="@routes.GetTaskController.index(task.id.get)">@task.id</a></td>
+      </tr>
+    }
+    </tbody>
+  </table>
+  <a href="@routes.CreateTaskController.create()" class="btn btn-primary">@Messages("CreateTask")</a>
+</div>
+
+}

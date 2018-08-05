@@ -1,0 +1,21 @@
+@import b3.vertical.fieldConstructor
+
+@(task: Task)(implicit messagesProvider: MessagesProvider, request: RequestHeader)
+
+@main(Messages("GetTask")) {
+<div class="container">
+    <h1>@Messages("GetTask")</h1>
+    <table class="table table-bordered">
+        <tr>
+            <th>@Messages("Id")</th>
+            <td>@task.id.get</td>
+        </tr>
+        <tr>
+            <th>@Messages("Task")</th>
+            <td>@task.content</td>
+        </tr>
+    </table>
+    <a href="@routes.UpdateTaskController.index(task.id.get)" class="btn btn-default">@Messages("UpdateTask")</a>
+</div>
+
+}

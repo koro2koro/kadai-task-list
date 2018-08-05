@@ -1,0 +1,10 @@
+Id=Id
+Title=タスク管理アプリケーション
+Task=タスク
+CreateTask=タスク新規作成
+UpdateTask=タスク編集
+GetTasks=タスク一覧
+GetTask=タスク詳細
+
+CreateTaskError=タスク作成エラーが発生しました。
+UpdateTaskError=タスク更新エラーが発生しました。

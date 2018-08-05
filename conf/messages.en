@@ -1,0 +1,10 @@
+Id=Id
+Title=Task Management Application
+Task=Task
+CreateTask=Create Task
+UpdateTask=Edit Task
+GetTasks=Tasks
+GetTask=Task Detail
+
+CreateTaskError=Task creation error
+UpdateTaskError=Task update error
