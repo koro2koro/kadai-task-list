@@ -1,6 +1,7 @@
 Id=Id
 Title=タスク管理アプリケーション
 Task=タスク
+Status=ステータス
 CreateTask=タスク新規作成
 UpdateTask=タスク編集
 GetTasks=タスク一覧

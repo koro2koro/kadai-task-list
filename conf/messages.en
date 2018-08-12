@@ -1,6 +1,7 @@
 Id=Id
 Title=Task Management Application
 Task=Task
+Status=Status
 CreateTask=Create Task
 UpdateTask=Edit Task
 GetTasks=Tasks

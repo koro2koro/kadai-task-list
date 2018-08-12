@@ -11,6 +11,7 @@
             @b3.formCSRF(routes.UpdateTaskController.update) {
                 @b3.hidden(taskForm("id").name, taskForm("id").value.get)
                 @b3.text(taskForm("content"), '_label -> "Content")
+                @b3.text(taskForm("status"), '_label -> "Status")
                 @b3.submit('class -> "btn btn-default") {
                     @Messages("UpdateTask")
                 }

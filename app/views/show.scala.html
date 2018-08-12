@@ -14,6 +14,10 @@
             <th>@Messages("Task")</th>
             <td>@task.content</td>
         </tr>
+        <tr>
+            <th>@Messages("Status")</th>
+            <td>@task.status</td>
+        </tr>
     </table>
     <a href="@routes.UpdateTaskController.index(task.id.get)" class="btn btn-default">@Messages("UpdateTask")</a>
 </div>
